@@ -7,9 +7,8 @@ Live Prewiev: [Nothing here]()
 * Log in and tag expenses
 * List Expenses
 * Few graphs(last month / last year)
-* Stored in FireBase
 * Modern UI/UX design
-* Based on React JS with Tailwind
+* Based on NEXT JS with Tailwind
 ## 🤝  Contributing
 Contributions, issues and feature requests are welcome! 😍
 ## ✨ Dont forget to give repo a star!
