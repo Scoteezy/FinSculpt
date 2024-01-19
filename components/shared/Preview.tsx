@@ -40,7 +40,7 @@ const Preview = () => {
       <GeometrySpacing
         type="type-light"
         marginTop=" mt-32 lg:mt-44"
-        marginBottom="mb-32 lg:mb-44"
+        marginBottom="mb-10 lg:mb-28"
       />
       <div className="w-full my-24">
         <h4 className={`${unica.className}  h4-medium text-primary-400`}>
