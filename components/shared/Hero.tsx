@@ -7,6 +7,7 @@ const Hero = () => {
         <Image
           src="/assets/images/logo.png"
           alt="logo"
+          className="w-[220px] h-[220px]"
           width={220}
           height={220}
         />

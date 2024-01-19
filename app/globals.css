@@ -153,7 +153,7 @@ body {
   }
 
   .p-regular-20 {
-    @apply text-[20px] font-normal leading-[30px] tracking-[2%];
+    @apply text-[20px] font-normal leading-[1.4em] tracking-[2%];
   }
 
   /* 18 */
@@ -179,7 +179,7 @@ body {
   }
 
   .p-regular-16 {
-    @apply text-[16px] font-normal leading-[24px];
+    @apply text-[16px] font-normal leading-[1.4em];
   }
 
   /* 14 */
