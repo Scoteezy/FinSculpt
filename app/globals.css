@@ -74,7 +74,7 @@
 }
 
 body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-unica);
 }
 
 .filter-grey {
@@ -97,18 +97,14 @@ body {
   }
 
   /* TYPOGRAPHY */
-  /* 64 */
-  .h1-bold {
-    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
+  /* 80 */
+  .h1-regular {
+    @apply font-medium text-[32px] leading-[1.1em] lg:text-[64px] lg:leading-[1.1em]  xl:text-[80px] xl:leading-[1.1em];
   }
 
-  /* 40 */
-  .h2-bold {
-    @apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
-  }
-
-  .h2-medium {
-    @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+  /* 48 */
+  .h2-regular {
+    @apply font-medium text-[32px] leading-[40px] lg:text-[40px] lg:leading-[1.2em] xl:text-[48px] xl:leading-[1.2em];
   }
 
   /* 36 */
@@ -122,7 +118,7 @@ body {
 
   /* 32 */
   .h4-medium {
-    @apply font-medium text-[32px] leading-[40px];
+    @apply font-medium text-[20px] leading-[1.3em] md:text-[32px];
   }
 
   /* 28 */
