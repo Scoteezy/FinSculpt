@@ -1,14 +1,31 @@
-# Expenses Tracker App
-With this app you can easily track your expensis
-## ✅ Prewiew
-Live Prewiev: [Nothing here]()
-## ✨ Features in future 
-* Users system
-* Log in and tag expenses
-* List Expenses
-* Few graphs(last month / last year)
-* Modern UI/UX design
-* Based on NEXT JS with Tailwind
-## 🤝  Contributing
-Contributions, issues and feature requests are welcome! 😍
-## ✨ Dont forget to give repo a star!
+
+# FinSculpt
+
+Modern web-app based on NEXT JS with Tailwind for tracking money. Income, Expenses, Crypto
+
+## Roadmap
+* ~~Welcome page(landing)~~
+* Auth with clerk
+* MongoDB as data base
+* Expenses Page
+* Income Page
+* Crypto wallet Page
+* Graphs for all pages
+
+## Live Preview
+
+[FinSculpt](https://fin-sculpt.vercel.app/)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at scoteeezy@gmail.com
+
+
+## Appendix
+
+Welcome page design was build my framer ai
+
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
