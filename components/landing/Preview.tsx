@@ -1,6 +1,6 @@
 import { unica } from "@/app/fonts";
 import Image from "next/image";
-import { GeometrySpacing } from "./GeometrySpacing";
+import { GeometrySpacing } from "../shared/GeometrySpacing";
 const Preview = () => {
   return (
     <section className="mt-14 lg:mt-32 xl:mt-40 wrapper flex flex-col flex-center">
