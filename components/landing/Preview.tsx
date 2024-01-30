@@ -10,6 +10,7 @@ const Preview = () => {
           alt="expenses-tracker-preview"
           width={358}
           height={358}
+          className="w-[358px] h-[358px]"
         />
         <div className="max-w-96 mt-10 lg:mt-0">
           <h4 className={`${unica.className} h4-medium text-primary-400`}>
