@@ -1,15 +1,15 @@
-import Image from "next/image";
 import { unica } from "@/app/fonts";
+import Image from "next/image";
 const Team = () => {
   return (
     <section className="wrapper py-40 flex-center">
       <div className="flex flex-col flex-center">
         <Image
-          src="/assets/images/denis-avatar.jpg"
           alt="denis-avatar"
-          width={80}
-          height={80}
           className="rounded-full grayscale ml-1"
+          height={80}
+          src="/assets/images/denis-avatar.jpg"
+          width={80}
         />
         <p
           className={`${unica.className} p-regular-20 text-center text-black mt-5 `}

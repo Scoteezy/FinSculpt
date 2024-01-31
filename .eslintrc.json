@@ -46,7 +46,7 @@
     "sonarjs/no-duplicate-string": "off",
 
     // * The format of the name of the variable
-    "unicorn/prefer-spread": "error",
+    "unicorn/prefer-spread": "off",
 
     // * Bracket style format
     "brace-style": ["error", "1tbs"],
@@ -67,11 +67,11 @@
     // * Indent format (gap = 2)
     "indent": ["error", 2],
 
-    // * Formatting the end of the line by UNIX format (LF)
-    "linebreak-style": ["error", "unix"],
+    // * Formatting the end of the line by windows format (LF)
+    "linebreak-style": ["error", "windows"],
 
     // * The term format ('string')
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
 
     // * Format of the end of the line, installation of a point with a comma (;)
     "semi": ["error", "always"],
