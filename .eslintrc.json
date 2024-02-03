@@ -6,12 +6,11 @@
   },
   "extends": [
     "next/core-web-vitals",
-    "standard",
     "eslint:recommended",
     "plugin:sonarjs/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:perfectionist/recommended-natural",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -49,14 +48,14 @@
     "unicorn/prefer-spread": "off",
 
     // * Bracket style format
-    "brace-style": ["error", "1tbs"],
+    "brace-style": ["warn", "1tbs"],
 
     // * The format of the style of functions
-    "curly": ["error", "all"],
+    "curly": ["warn", "all"],
 
     // * Line length format (120 characters))
     "max-len": [
-      "error",
+      "warn",
       {
         "code": 120,
         "ignoreUrls": true,
@@ -65,20 +64,22 @@
     ],
 
     // * Indent format (gap = 2)
-    "indent": ["error", 2],
+    "indent": ["warn", 2],
+    // Props per line
+    "react/jsx-max-props-per-line": ["warn", { "maximum": 1, "when": "always" }],
 
-    // * Formatting the end of the line by windows format (LF)
-    "linebreak-style": ["error", "windows"],
+    // * Formatting the end of the line by windows format (CRLF)
+    "linebreak-style": ["warn", "windows"],
 
     // * The term format ('string')
-    "quotes": ["error", "double"],
+    "quotes": ["warn", "double"],
 
     // * Format of the end of the line, installation of a point with a comma (;)
-    "semi": ["error", "always"],
+    "semi": ["warn", "always"],
 
     // * The format of installation of a gap in front of the function of the function
     "space-before-function-paren": [
-      "error",
+      "warn",
       {
         "anonymous": "always",
         "named": "always",
@@ -88,7 +89,7 @@
 
     // * Indent format between operators
     "padding-line-between-statements": [
-      "error",
+      "warn",
       {
         "blankLine": "always",
         "prev": ["const", "let", "var"],
@@ -103,7 +104,7 @@
 
     // * The format of the length of the name of the variable
     "id-length": [
-      "error",
+      "warn",
       {
         "min": 3,
         "exceptions": ["i", "x", "y", "e", "t", "_", "id", "or", "OR", "z"]
@@ -127,7 +128,7 @@
     "perfectionist/sort-object-types": "off",
     "perfectionist/sort-objects": "off",
     "perfectionist/sort-imports": [
-      "error",
+      "warn",
       {
         "type": "natural",
         "order": "asc",
