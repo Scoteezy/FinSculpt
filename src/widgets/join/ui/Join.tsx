@@ -1,8 +1,7 @@
-import { unica } from "@/app/fonts";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { unica } from "@/src/shared";
+import { Button } from "@/src/shared";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
-
-import { Button } from "../ui/button";
 
 const Join = () => {
   return (

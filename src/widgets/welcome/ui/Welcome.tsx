@@ -1,6 +1,5 @@
-import React from "react";
-import { unica } from "@/app/fonts";
 
+import { unica } from "@/src/shared";
 const Welcome = () => {
   return (
     <section className="wrapper mt-14 lg:mt-20 xl:mt-24">

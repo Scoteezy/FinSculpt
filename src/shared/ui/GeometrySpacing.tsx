@@ -20,6 +20,7 @@ const geometry2 = [
   "/assets/images/geometry-2/Geometry-5.png",
   "/assets/images/geometry-2/Geometry-6.png",
 ];
+
 export const GeometrySpacing = ({
   type,
   marginTop,
@@ -34,12 +35,12 @@ export const GeometrySpacing = ({
         >
           {geometry1.map((img) => (
             <Image
+              alt="geometry"
+              className="w-[120px] h-[120px]"
+              height={120}
               key={img}
               src={img}
-              className="w-[120px] h-[120px]"
               width={120}
-              height={120}
-              alt="geometry"
             />
           ))}
         </div>
@@ -49,12 +50,12 @@ export const GeometrySpacing = ({
         >
           {geometry2.map((img) => (
             <Image
+              alt="geometry"
               className="w-[120px] h-[120px] "
+              height={120}
               key={img}
               src={img}
               width={120}
-              height={120}
-              alt="geometry"
             />
           ))}
         </div>

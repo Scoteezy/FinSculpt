@@ -1,16 +1,17 @@
-import { unica } from "@/app/fonts";
+import { unica } from "@/src/shared";
 import Image from "next/image";
-import { GeometrySpacing } from "../shared/GeometrySpacing";
+
+import { GeometrySpacing } from "../../../shared/ui/GeometrySpacing";
 const Preview = () => {
   return (
     <section className="mt-14 lg:mt-32 xl:mt-40 wrapper flex flex-col flex-center">
       <div className="flex w-full flex-col flex-center lg:flex-row-reverse lg:flex-between">
         <Image
-          src="/assets/images/expenses-placeholder.png"
           alt="expenses-tracker-preview"
-          width={358}
-          height={358}
           className="w-[358px] h-[358px]"
+          height={358}
+          src="/assets/images/expenses-placeholder.png"
+          width={358}
         />
         <div className="max-w-96 mt-10 lg:mt-0">
           <h4 className={`${unica.className} h4-medium text-primary-400`}>
@@ -24,10 +25,10 @@ const Preview = () => {
       </div>
       <div className="flex w-full mt-14 lg:mt-10 xl:mt-14 flex-col flex-center lg:flex-row lg:flex-between">
         <Image
-          src="/assets/images/income_placeholder.png"
           alt="expenses-tracker-preview"
-          width={470}
           height={300}
+          src="/assets/images/income_placeholder.png"
+          width={470}
         />
         <div className="max-w-96 mt-10 lg:mt-0">
           <h4 className={`${unica.className} h4-medium text-primary-400`}>
@@ -39,9 +40,9 @@ const Preview = () => {
         </div>
       </div>
       <GeometrySpacing
-        type="type-light"
-        marginTop=" mt-32 lg:mt-44"
         marginBottom="mb-10 lg:mb-28"
+        marginTop=" mt-32 lg:mt-44"
+        type="type-light"
       />
       <div className="w-full my-24">
         <h4 className={`${unica.className}  h4-medium text-primary-400`}>

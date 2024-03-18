@@ -1,4 +1,4 @@
-import { Unica_One, Martian_Mono } from "next/font/google";
+import { Martian_Mono, Unica_One } from "next/font/google";
 
 export const unica = Unica_One({
   subsets: ["latin"],

@@ -1,6 +1,5 @@
+import { Navigation } from "@/src/widgets";
 import { Metadata } from "next";
-
-import Navigation from "@/components/shared/Navigation";
 
 export const metadata: Metadata = {
   icons: {

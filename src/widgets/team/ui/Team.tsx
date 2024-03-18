@@ -1,4 +1,4 @@
-import { unica } from "@/app/fonts";
+import { unica } from "@/src/shared";
 import Image from "next/image";
 const Team = () => {
   return (

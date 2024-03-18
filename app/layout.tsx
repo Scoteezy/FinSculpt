@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 
+import { martian } from "@/src/shared";
 import { ClerkProvider } from "@clerk/nextjs";
-
-import { martian } from "./fonts";
 
 import "./globals.css";
 
@@ -24,6 +23,7 @@ export default function RootLayout ({
         <body className={martian.className}>{children}</body>
       </html>
     </ClerkProvider>
+   
    
   );
 }

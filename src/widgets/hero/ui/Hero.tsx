@@ -1,16 +1,16 @@
+import { unica } from "@/src/shared";
 import Image from "next/image";
-import { unica } from "@/app/fonts";
 const Hero = () => {
   return (
     <section className="bg-black p-5 lg:p-12 xl:p-24">
       <div className="wrapper  flex-center flex-col">
         <Image
-          src="/assets/images/logo.png"
           alt="logo"
-          priority
           className="w-[220px] h-[220px]"
-          width={220}
           height={220}
+          priority
+          src="/assets/images/logo.png"
+          width={220}
         />
         <h1
           className={`${unica.className} h1-regular mt-12 text-white text-unica text-center `}

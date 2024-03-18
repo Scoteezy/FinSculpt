@@ -47,12 +47,12 @@ const Footer = () => {
         <div className="flex mb-5">
           {icons.map((icon) => (
             <Image
+              alt={icon.alt}
+              className={icon.classes}
+              height={50}
               key={icon.alt}
               src={icon.link}
-              alt={icon.alt}
               width={50}
-              height={50}
-              className={icon.classes}
             />
           ))}
         </div>

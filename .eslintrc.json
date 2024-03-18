@@ -1,0 +1,171 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:perfectionist/recommended-natural",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "perfectionist"],
+  "rules": {
+    // * Disconnect Prettier
+    "prettier/prettier": "off",
+
+    // * Disconnect not used options
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "import/no-cycle": "off",
+    "no-magic-numbers": "off",
+    "no-empty-pattern": "off",
+    "no-nested-ternary": "off",
+    "import/extensions": "off",
+    "no-param-reassign": "off",
+    "prefer-rest-params": "off",
+    "prefer-destructuring": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "function-paren-newline": "off",
+    "import/no-default-export": "off",
+    "unicorn/filename-case": "off",
+    "no-bitwise": "off",
+    "no-empty-function": "off",
+    "no-useless-constructor": "off",
+    "sonarjs/no-duplicate-string": "off",
+
+    // * The format of the name of the variable
+    "unicorn/prefer-spread": "off",
+
+    // * Bracket style format
+    "brace-style": ["warn", "1tbs"],
+
+    // * The format of the style of functions
+    "curly": ["warn", "all"],
+
+    // * Line length format (120 characters))
+    "max-len": [
+      "warn",
+      {
+        "code": 170,
+        "ignoreUrls": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+
+    // * Indent format (gap = 2)
+    "indent": ["warn", 2],
+
+    // * Formatting the end of the line by windows format (CRLF)
+    "linebreak-style": "off",
+
+    // * The term format ('string')
+    "quotes": ["warn", "double"],
+
+    // * Format of the end of the line, installation of a point with a comma (;)
+    "semi": ["warn", "always"],
+
+    // * The format of installation of a gap in front of the function of the function
+    "space-before-function-paren": [
+      "warn",
+      {
+        "anonymous": "always",
+        "named": "always",
+        "asyncArrow": "always"
+      }
+    ],
+
+    // * Indent format between operators
+    "padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": ["const", "let", "var"],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      }
+    ],
+
+    // * The format of the length of the name of the variable
+    "id-length": [
+      "warn",
+      {
+        "min": 3,
+        "exceptions": ["i", "x", "y", "e", "t", "_", "id", "or", "OR", "z"]
+      }
+    ],
+
+    // * The format of the name of the variable
+    "id-match": [
+      "warn",
+      "^(([A-Za-z0-9]+){1,})|([A-Z][A-Z_0-9]+)$",
+      {
+        "properties": false,
+        "onlyDeclarations": true
+      }
+    ],
+    // Props new line
+    "react/jsx-max-props-per-line":[1,{"maximum":1}],
+    // * Import format in the file
+    "perfectionist/sort-classes": "off",
+    "perfectionist/sort-enums": "off",
+    "perfectionist/sort-interfaces": "off",
+    "perfectionist/sort-object-types": "off",
+    "perfectionist/sort-objects": "off",
+    "perfectionist/sort-imports": [
+      "warn",
+      {
+        "type": "natural",
+        "order": "asc",
+        "groups": [
+          "import",
+          "export",
+          "type",
+          "react",
+          "nanostores",
+          ["builtin", "external"],
+          "internal-type",
+          "internal",
+          ["parent-type", "sibling-type", "index-type"],
+          ["parent", "sibling", "index"],
+          "side-effect",
+          "style",
+          "object",
+          "unknown"
+        ],
+        "custom-groups": {
+          "value": {
+            "react": ["react", "react-*"],
+            "nanostores": "@nanostores/**"
+          },
+          "type": {
+            "react": "react"
+          }
+        },
+        "newlines-between": "always",
+        "internal-pattern": [
+          "@/components/**",
+          "@/stores/**",
+          "@/pages/**",
+          "@/lib/**"
+        ]
+      }
+    ]
+  }
+}
