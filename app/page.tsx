@@ -1,7 +1,5 @@
-import { Landing } from "@/src/views";
+import { Landing } from "@/src/views/landing";
 
 export default function Home () {
-  return (
-    <Landing/>
-  );
+  return <Landing/>;
 }

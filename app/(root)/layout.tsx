@@ -1,4 +1,4 @@
-import { Navigation } from "@/src/widgets";
+import { Navigation } from "@/src/widgets/navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,9 +13,9 @@ export default function RootLayout ({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex h-screen ">
+    <div className="flex  bg-white md:h-screen dark:bg-secondaryDarkTheme-500">
       <Navigation />
-      <main className="flex-1 pt-8">{children}</main>
+      <main className="flex-1 my-auto">{children}</main>
     </div>
   );
 }

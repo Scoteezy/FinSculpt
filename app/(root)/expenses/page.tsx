@@ -1,3 +1,4 @@
+import { Expenses } from "@/src/views/expenses";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "FinSculpt | Expenses Page",
@@ -8,9 +9,7 @@ export const metadata: Metadata = {
 };
 const ExpensesPage = () => {
   return (
-    <>
-      <h1 className="h2-regular">Expenses</h1>
-    </>
+    <Expenses/>
   );
 };
 

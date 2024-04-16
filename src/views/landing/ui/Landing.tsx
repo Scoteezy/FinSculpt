@@ -1,6 +1,14 @@
+import { Footer } from "react-day-picker";
 
-import { GeometrySpacing } from "@/src/shared";
-import { Footer, Hero, Join, Preview, Team, Welcome } from "@/src/widgets";
+import { GeometrySpacing } from "@/src/shared/ui";
+
+import Hero from "./Hero";
+import Join from "./Join";
+import Preview from "./Preview";
+import Team from "./Team";
+import Welcome from "./Welcome";
+
+
 const Landing = () => {
   return (
     <>

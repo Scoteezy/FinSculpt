@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
 
-import { martian } from "@/src/shared";
+import { martian } from "@/src/shared/lib/fonts";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Metadata } from "next";
 
 import "./globals.css";
 
