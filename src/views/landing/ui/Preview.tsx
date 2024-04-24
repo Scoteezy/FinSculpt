@@ -1,8 +1,11 @@
 import { unica } from "@/src/shared/lib/fonts";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { GeometrySpacing } from "../../../shared/ui/GeometrySpacing";
 const Preview = () => {
+  const t = useTranslations("landing");
+
   return (
     <section className="mt-14 lg:mt-32 xl:mt-40 wrapper flex flex-col flex-center">
       <div className="flex w-full flex-col flex-center lg:flex-row-reverse lg:flex-between">
@@ -15,11 +18,10 @@ const Preview = () => {
         />
         <div className="max-w-96 mt-10 lg:mt-0">
           <h4 className={`${unica.className} h4-medium text-primary-400`}>
-            Expenses Tracker
+            {t("expenses")}
           </h4>
           <p className="p-regular-16 mt-5 lg:mt-10 text-primary-400">
-            Keep a keen eye on your cash with our exceptional expenses tracking
-            system!
+            {t("expenses_text")}
           </p>
         </div>
       </div>
@@ -32,10 +34,10 @@ const Preview = () => {
         />
         <div className="max-w-96 mt-10 lg:mt-0">
           <h4 className={`${unica.className} h4-medium text-primary-400`}>
-            Income Monitor
+            {t("income")}
           </h4>
           <p className="p-regular-16 mt-5 lg:mt-10 lg:max-w-[358px]   text-primary-400">
-            Follow the inflow of your cash with our top-notch income monitor.
+            {t("income_text")}
           </p>
         </div>
       </div>
@@ -46,16 +48,14 @@ const Preview = () => {
       />
       <div className="w-full my-24">
         <h4 className={`${unica.className}  h4-medium text-primary-400`}>
-          Crypto Wallet
+          {t("crypto")}
         </h4>
         <div className="flex flex-col  md:flex-row md:justify-between md:items-start md:mt-10">
           <p className="p-regular-16 mt-10 md:mt-0 max-w-[600px] md:mr-5 xl:mr-0">
-            Integrate your crypto wallets and track their performance—crypto
-            isn‘t the future, it‘s today.
+            {t("crypto_text")}
           </p>
           <p className="p-regular-16 mt-10 md:mt-0 max-w-[600px]">
-            Our system accurately portrays your crypto growth and losses, making
-            your decision-making process that much easier.
+            {t("crypto_text-2")}
           </p>
         </div>
       </div>

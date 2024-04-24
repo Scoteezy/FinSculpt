@@ -1,6 +1,9 @@
 import { unica } from "@/src/shared/lib/fonts";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 const Team = () => {
+  const t =useTranslations("landing");
+
   return (
     <section className="wrapper py-40 flex-center">
       <div className="flex flex-col flex-center">
@@ -14,10 +17,10 @@ const Team = () => {
         <p
           className={`${unica.className} p-regular-20 text-center text-black mt-5 `}
         >
-          Denis
+          {t("denis")}
         </p>
         <p className="p-regular-16 text-center text-primary-400 mt-2">
-          Full-stack developer
+          {t("dev_grade")}
         </p>
       </div>
     </section>

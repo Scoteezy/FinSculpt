@@ -1,0 +1,32 @@
+{
+    "sidebar":{ 
+        "Dashboard":"Dashboard",
+        "Crypto":"Crypto",
+        "Incomes": "Incomes",
+        "Expenses":"Expenses",
+        "FAQ": "FAQ"
+    },
+    "landing":{
+        "revolution":"Revolutionize your",
+        "life" :  "Financial life!",
+        "welcome" :"Welcome to FinSculpt!",
+        "welcome_text":"Monitoring your financial activities has never been so fun. Say goodbye to boring spreadsheets and hello to dynamic, engaging, and intelligent financial tracking!",
+        "expenses":"Expenses Tracker",
+        "income":"Income Monitor ",
+        "expenses_text":"Keep a keen eye on your cash with our exceptional expenses tracking system!",
+        "income_text":"Follow the inflow of your cash with our top-notch income monitor.",
+        "crypto_text":"Integrate your crypto wallets and track their performance—crypto isn‘t the future, it‘s today.",
+        "crypto_text-2":"Our system accurately portrays your crypto growth and losses, making your decision-making process that much easier.",
+        "denis":"Denis",
+        "dev_grade":"Full-stack developer",
+        "signed_in":"You already signed in !",
+        "signed_in_button":"Start tracking",
+        "signed_in_text":" Go ahead and take control of your financial destiny.",
+        "signed_out":"Join Us",
+        "signed_out_text":"Ready to take control of your financial destiny? Don‘t sleep on it—your medium of financial tracking just got an upgrade!",
+        "signed_out_button":"Sign Up Now",
+        "reserved":"© 2024 FinSculpt. All rights reserved."
+
+
+    }
+}

@@ -7,7 +7,7 @@ export const unica = Unica_One({
 });
 
 export const martian = Martian_Mono({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400"],
   variable: "--font-martian",
 });

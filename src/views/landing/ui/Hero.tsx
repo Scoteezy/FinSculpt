@@ -1,6 +1,9 @@
 import { unica } from "@/src/shared/lib/fonts";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 const Hero = () => {
+  const t =useTranslations("landing");
+
   return (
     <section className="bg-black p-5 lg:p-12 xl:p-24">
       <div className="wrapper  flex-center flex-col">
@@ -15,9 +18,9 @@ const Hero = () => {
         <h1
           className={`${unica.className} h1-regular mt-12 text-white text-unica text-center `}
         >
-          Revolutionize your <br />
+          {t("revolution")} <br />
           <span className="px-5 mt-5 inline-block  py-2 bg-white  text-black rounded-xl">
-            Financial life!{" "}
+            {t("life")}{" "}
           </span>
         </h1>
       </div>

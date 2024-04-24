@@ -1,6 +1,6 @@
+import { LanguageSwitcher } from "@/src/features/language";
 import { Theme } from "@/src/features/theme";
-import { NavItems, Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/src/shared/ui";
-import {Hamburger} from "@/src/shared/ui";
+import { Hamburger, NavItems, Sheet, SheetContent, SheetHeader, SheetTitle,SheetTrigger } from "@/src/shared/ui";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 const Navigation = () => {
@@ -10,9 +10,12 @@ const Navigation = () => {
     lg:w-44   
      lg:pt-12 my-5 lg:my-auto">
       <div className="hidden sm:flex items-center lg:flex-col justify-evenly lg:justify-normal">
-        <div className=" gap-10 flex-center">
-          <UserButton afterSignOutUrl="/"/>
-          <Theme/>
+        <div className=" gap-5 lg:gap-10 flex-col flex-center my-2 lg:my-0">
+          <div className="gap-5 lg:gap-10 flex-center ">
+            <UserButton afterSignOutUrl="/"/>
+            <Theme/>
+          </div>
+          <LanguageSwitcher/>
         </div>
         <NavItems className="flex lg:flex-col sm:gap-6 md:gap-12 lg:gap-0 gap-0 "
           linkClassName="my-5 lg:my-0 lg:mt-12"/>
@@ -25,7 +28,8 @@ const Navigation = () => {
             width={52}
           />
           <Theme/>
-          <p>lang</p>
+          <LanguageSwitcher/>
+
         </div>
         <Sheet>
           <SheetTrigger>
