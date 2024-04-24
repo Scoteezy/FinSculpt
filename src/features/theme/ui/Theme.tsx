@@ -1,11 +1,12 @@
 "use client";
-import { useEffect,useState } from "react";
+import { useContext,useEffect} from "react";
 
+import { ThemeContext } from "@/src/app/providers/ThemeProvider";
 import { Switch } from "@/src/shared/ui";
 
 
 const Theme = ({className}:{className?:string}) => {
-  const [theme,setTheme] = useState("");
+  const {theme,setTheme} = useContext(ThemeContext);
 
   useEffect(()=>{
     if (localStorage.theme === "dark" || (!("theme" in localStorage) 

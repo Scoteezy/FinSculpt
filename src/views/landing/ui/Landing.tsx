@@ -1,7 +1,6 @@
-import { Footer } from "react-day-picker";
-
 import { GeometrySpacing } from "@/src/shared/ui";
 
+import Footer from "./FooterNav";
 import Hero from "./Hero";
 import Join from "./Join";
 import Preview from "./Preview";

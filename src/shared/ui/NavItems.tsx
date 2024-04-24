@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 
 import { navLinks } from "../lib/constants";
 
-const NavItems = () => {
+const NavItems = ({className, linkClassName} : {className?: string, linkClassName?: string}) => {
   const pathname = usePathname();
 
   return (
-    <ul className="h-full flex flex-col text-black dark:text-primaryDarkTheme-400 ">
+    <ul className={`h-full  text-black  dark:text-primaryDarkTheme-400 ${className}`}>
       {navLinks.map((link) => {
         const isActive = pathname === link.route;
 
@@ -17,7 +17,7 @@ const NavItems = () => {
           <li
             className={`${
               isActive && "text-primary-400 dark:text-primaryDarkTheme-500"
-            } p-medium-16 whitespace-nowrap mt-12 w-fit`}
+            } p-medium-16 whitespace-nowrap  w-fit ${linkClassName}`}
             key={link.route}
           >
             <Link
@@ -27,7 +27,6 @@ const NavItems = () => {
               <div className="w-0 bg-dark dark:bg-primaryDarkTheme-500 h-[1px] peer-hover:w-full transition-all duration-500"></div>
             ):(
               <div className="w-full bg-dark dark:bg-primaryDarkTheme-500 h-[1px] transition-all duration-500"></div>
-
             )}
           </li>
         );

@@ -29,7 +29,7 @@ const ExpensesList = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-2 gap-5">
+    <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-5">
       {mock.map((expense) => (
         <Expense {...expense}
           key={expense.id}/>

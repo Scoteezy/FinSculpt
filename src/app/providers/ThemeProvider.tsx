@@ -1,6 +1,7 @@
+"use client";
 import { ReactNode, createContext, useMemo, useState } from "react";
 
-import { ThemeContextType } from "@/src/shared";
+import { ThemeContextType } from "@/src/shared/model/types";
 const defaultValue:ThemeContextType = {
   theme: "dark",
   setTheme: () => {},

@@ -5,7 +5,7 @@ import { ExpensesList } from "@/src/widgets/expenses";
 import Link from "next/link";
 const Expenses = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-5 mr-5">
+    <section className="flex flex-col md:flex-row gap-5 mx-5">
       <Window styles='pt-8 h-[95vh] px-5 w-full mt-5 md:mt-0 md:w-1/2'>
         <div className="flex-between">
           <h2 className={` h2-regular ${unica.className} text-black dark:text-primaryDarkTheme-400 `}>Expenses</h2>
