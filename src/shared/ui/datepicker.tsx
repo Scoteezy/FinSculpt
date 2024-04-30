@@ -28,7 +28,7 @@ export function DatePickerWithRange ({
         <PopoverTrigger asChild>
           <Button
             className={cn(
-              "w-[300px] justify-start text-left font-normal",
+              "w-[300px] justify-start text-left font-normal dark:bg-primaryDarkTheme-500/80",
               !date && "text-muted-foreground"
             )}
             id="date"
@@ -50,7 +50,7 @@ export function DatePickerWithRange ({
           </Button>
         </PopoverTrigger>
         <PopoverContent align="start"
-          className="w-auto p-0">
+          className="w-auto p-0 dark:bg-primaryDarkTheme-500 dark:border-secondaryDarkTheme-500">
           <Calendar
             defaultMonth={date?.from}
             initialFocus

@@ -3,6 +3,7 @@ import { GeometrySpacing } from "@/src/shared/ui";
 import Footer from "./FooterNav";
 import Hero from "./Hero";
 import Join from "./Join";
+import LocaleButton from "./LocaleButton";
 import Preview from "./Preview";
 import Team from "./Team";
 import Welcome from "./Welcome";
@@ -11,6 +12,7 @@ import Welcome from "./Welcome";
 const Landing = () => {
   return (
     <>
+      <LocaleButton/>
       <Hero />
       <Welcome />
       <Preview />

@@ -40,7 +40,6 @@ const Navigation = () => {
             <SheetHeader>
               <SheetTitle className="mb-1 flex items-center gap-5">
                 <UserButton afterSignOutUrl="/"/>
-
                 FinSculpt 
               </SheetTitle>
               <NavItems className="flex flex-col"

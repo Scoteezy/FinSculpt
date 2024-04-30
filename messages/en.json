@@ -26,7 +26,11 @@
         "signed_out_text":"Ready to take control of your financial destiny? Don‘t sleep on it—your medium of financial tracking just got an upgrade!",
         "signed_out_button":"Sign Up Now",
         "reserved":"© 2024 FinSculpt. All rights reserved."
-
+    },
+    "main": {
+        "expenses":"Expenses",
+        "analyses": "Analyses",
+        "create":"Create"
 
     }
 }

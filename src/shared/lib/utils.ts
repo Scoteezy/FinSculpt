@@ -8,3 +8,7 @@ export const formatDate = (string:Date | string)=>{
     .replace(/^([^T]+)T(.+)$/,"$1")
     .replace(/^(\d+)-(\d+)-(\d+)$/,"$3.$2.$1");
 };
+export const handleError = (error: unknown) => {
+  console.error(error);
+  throw new Error(typeof error === "string" ? error : JSON.stringify(error));
+};

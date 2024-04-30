@@ -2,6 +2,7 @@ import { Document, Schema, model, models } from "mongoose";
 
 export interface IExpense extends Document {
     _id:string,
+    user: {_id:string}
     createdAt: Date,
     title:string,
     description:string,
@@ -16,7 +17,8 @@ const ExpenseSchema = new Schema({
   amount: {type: Number, required: true},
   description: { type: String },
   date: {type: Date, required: true, default: Date.now},
-  tags: {type: Schema.Types.ObjectId, ref: "Tags"}
+  tags: {type: Schema.Types.ObjectId, ref: "Tags"},
+  organizer: { type: Schema.Types.ObjectId, ref: "User" },
 });
 
 const Expense = models.Expense || model("Expense", ExpenseSchema);
