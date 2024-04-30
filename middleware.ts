@@ -13,9 +13,11 @@ export default authMiddleware({
     return intlMiddleware(req);
   },
 
-  publicRoutes: ["/:locale", "/:locale/sign-in"],
+  publicRoutes: ["/:locale", "/:locale/sign-in","/:locale/sign-up"],
+  ignoredRoutes: [
+    "/:locale/api/webhook/clerk",]
 });
 
 export const config = {
-  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)","/(ru|en)/:path*"],
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };
