@@ -1,10 +1,9 @@
 
 import { martian } from "@/src/shared/lib/fonts";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-
+import {SessionProvider} from "@/src/app/providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,14 +31,13 @@ export default async function  RootLayout ({
   return (
     <NextIntlClientProvider locale={locale}
       messages={messages}>
-      <ClerkProvider>
         <html lang={locale}>
           <body className={martian.className}>
-       
+          <SessionProvider>
             {children}
+            </SessionProvider>
           </body>
         </html>
-      </ClerkProvider>
     </NextIntlClientProvider>
    
    

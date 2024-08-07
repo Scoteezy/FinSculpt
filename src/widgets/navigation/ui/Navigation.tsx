@@ -1,7 +1,6 @@
 import { LanguageSwitcher } from "@/src/features/language";
 import { Theme } from "@/src/features/theme";
 import { Hamburger, NavItems, Sheet, SheetContent, SheetHeader, SheetTitle,SheetTrigger } from "@/src/shared/ui";
-import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 const Navigation = () => {
   return (
@@ -12,7 +11,6 @@ const Navigation = () => {
       <div className="hidden sm:flex items-center lg:flex-col justify-evenly lg:justify-normal">
         <div className=" gap-5 lg:gap-10 flex-col flex-center my-2 lg:my-0">
           <div className="gap-5 lg:gap-10 flex-center ">
-            <UserButton afterSignOutUrl="/"/>
             <Theme/>
           </div>
           <LanguageSwitcher/>
@@ -39,7 +37,6 @@ const Navigation = () => {
           <SheetContent className="bg-secondary-500 dark:bg-primaryDarkTheme-500/70 dark:border-secondaryDarkTheme-500">
             <SheetHeader>
               <SheetTitle className="mb-1 flex items-center gap-5">
-                <UserButton afterSignOutUrl="/"/>
                 FinSculpt 
               </SheetTitle>
               <NavItems className="flex flex-col"
