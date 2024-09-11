@@ -2,7 +2,7 @@
 import { unica } from "@/src/shared/lib/fonts";
 import { Button} from "@/src/shared/ui";
 import { useTranslations } from "next-intl";
-import { signIn,signOut, useSession} from "next-auth/react";
+import { signIn, useSession} from "next-auth/react";
 import Link from "next/link";
 
 const Join = () => {
