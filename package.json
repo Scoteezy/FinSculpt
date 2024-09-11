@@ -10,7 +10,7 @@
     "-------- Run --------": "",
     "dev": "next dev",
     "-------- Production --------": "",
-    "build": "next build",
+    "build": "npm run db:dev && next build",
     "start": "next start",
     "-------- Other --------": "",
     "lint": "next lint"
