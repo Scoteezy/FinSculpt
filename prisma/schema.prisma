@@ -56,9 +56,9 @@ model User {
     image         String?
     accounts      Account[]
     sessions      Session[]
-
+    expenses      Expense[]
+    tags          Tag[]
 }
-
 
 model VerificationToken {
     identifier String
@@ -66,4 +66,24 @@ model VerificationToken {
     expires    DateTime
 
     @@unique([identifier, token])
+}
+
+model Expense {
+    id          String   @id @default(cuid())
+    userId      String
+    user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+    title       String
+    currency    String   @default("rub")
+    amount      Int
+    date        DateTime
+    description String?
+    tags        Tag[]
+}
+
+model Tag {
+    id       String    @id @default(cuid())
+    userId   String
+    user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+    name     String
+    expenses Expense[]
 }

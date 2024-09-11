@@ -1,35 +1,59 @@
-import { Expense } from "@/src/entities/expense";
-import { ExpenseType } from "@/src/shared/model/types";
-
+import { Expense,ExpenseWithTags } from "@/src/entities/expense";
 const ExpensesList = () => {
-  const mock:ExpenseType[] = [{ 
+  const mock:ExpenseWithTags[] = [{ 
     id:"1",
     title: "Expense 1",
+    userId: 's',
     amount: 500,
     date: new Date(2024, 3, 30),
     description : "Description",
-    tags: ["Food", "Fun"]
+    tags: [{
+      id:'sd',
+      name:"food",
+      userId:'s'
+    }, {
+      id:'sd',
+      name:"game",
+      userId:'s'
+    }]
   },
   { 
     id:"2",
+    userId: 's',
     title: "Expense 2",
     amount: 300,
     date: new Date(2024, 3, 28),
     description : "",
-    tags: ["Health", "Doctor"]
   },
   { 
     id:"3",
+    userId: 's',
     title: "Expense 3",
     amount: 300,
     date: new Date(2024, 3, 28),
     description : "",
-    tags: ["Health", "Doctor"]
+  },
+  { 
+    id:"4",
+    userId: 's',
+    title: "Expense 3",
+    amount: 300,
+    date: new Date(2024, 3, 28),
+    description : "",
+    tags: [{
+      id:'sd',
+      name:"food",
+      userId:'s'
+    }, {
+      id:'sd',
+      name:"game",
+      userId:'s'
+    }]
   }
   ];
 
   return (
-    <div className="w-full grid grid-cols-1 2xl:grid-cols-2 gap-5">
+    <div className="w-full flex flex-col gap-5">
       {mock.map((expense) => (
         <Expense {...expense}
           key={expense.id}/>
