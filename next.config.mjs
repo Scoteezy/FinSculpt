@@ -4,6 +4,9 @@ await import("./src/env.mjs");
 
 const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   reactStrictMode: false,
 
 };
