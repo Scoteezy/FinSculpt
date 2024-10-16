@@ -1,10 +1,9 @@
-import React from 'react'
-import { ExpenseWithTags } from '../model'
+import { ExpenseWithTags } from "../model";
 
 const DetailModal = ({expense}:{expense:ExpenseWithTags}) => {
   return (
-    <div>DetailModal</div>
-  )
-}
+    <div>{expense.id}</div>
+  );
+};
 
-export default DetailModal
+export default DetailModal;

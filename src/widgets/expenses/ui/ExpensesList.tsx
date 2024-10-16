@@ -3,51 +3,55 @@ const ExpensesList = () => {
   const mock:ExpenseWithTags[] = [{ 
     id:"1",
     title: "Expense 1",
-    userId: 's',
+    userId: "s",
     amount: 500,
     date: new Date(2024, 3, 30),
+    currency: "rub",
     description : "Description",
     tags: [{
-      id:'sd',
+      id:"sd",
       name:"food",
-      userId:'s'
+      userId:"s"
     }, {
-      id:'sd',
+      id:"sd",
       name:"game",
-      userId:'s'
+      userId:"s"
     }]
   },
   { 
     id:"2",
-    userId: 's',
+    userId: "s",
     title: "Expense 2",
     amount: 300,
+    currency: "rub",
     date: new Date(2024, 3, 28),
     description : "",
   },
   { 
     id:"3",
-    userId: 's',
+    userId: "s",
     title: "Expense 3",
     amount: 300,
+    currency: "rub",
     date: new Date(2024, 3, 28),
     description : "",
   },
   { 
     id:"4",
-    userId: 's',
+    userId: "s",
     title: "Expense 3",
     amount: 300,
+    currency: "rub",
     date: new Date(2024, 3, 28),
     description : "",
     tags: [{
-      id:'sd',
+      id:"sd",
       name:"food",
-      userId:'s'
+      userId:"s"
     }, {
-      id:'sd',
+      id:"sd",
       name:"game",
-      userId:'s'
+      userId:"s"
     }]
   }
   ];

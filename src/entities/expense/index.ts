@@ -1,4 +1,4 @@
-import  Expense from "./ui/Expense";
 import  DetailModal  from "./ui/DetailModal";
+import  Expense from "./ui/Expense";
 export  { type ExpenseWithTags } from "./model";
-export {Expense,DetailModal};
+export {DetailModal,Expense};

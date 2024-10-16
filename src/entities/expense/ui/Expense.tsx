@@ -1,14 +1,15 @@
+import { Tag } from "@/src/entities/tag";
 import { formatDate } from "@/src/shared/lib/utils";
 import {EditIcon, TrashIcon } from "@/src/shared/ui";
+
 import { ExpenseWithTags } from "../model";
-import { Tag } from '@/src/entities/tag'
 
 const Expense = (expense : ExpenseWithTags) => {
-  console.log(expense)
+  console.log(expense);
   return (
     <div className="flex flex-col p-3 gap-2 w-full bg-primary-400/20 dark:bg-primaryDarkTheme-400/40 rounded-lg drop-shadow-xl hover:opacity-60 transition-all duration-300 cursor-pointer">
       <div className="flex-between ">
-      <p className="p-medium-24 ">{expense.title}</p>
+        <p className="p-medium-24 ">{expense.title}</p>
         <p>{expense.amount}  ₽</p>
       </div>
       {/* <div className="flex-between">

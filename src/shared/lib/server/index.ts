@@ -1,5 +1,5 @@
 
 import { getServerAuthSession } from "./auth";
 import { db } from "./db";
-export {getServerAuthSession, db}
+export {db, getServerAuthSession};
 

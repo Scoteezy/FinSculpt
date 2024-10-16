@@ -10,6 +10,7 @@
     "-------- Run --------": "",
     "dev": "next dev",
     "-------- Production --------": "",
+    "preview": "dotenv -e .env.development.local next build && dotenv -e .env.development.local next start",
     "build": "npm run db:dev && next build",
     "start": "next start",
     "-------- Other --------": "",
